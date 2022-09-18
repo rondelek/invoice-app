@@ -1,0 +1,56 @@
+.menu {
+    width: 35%;
+    min-height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(180deg, rgba(146,119,252,.7) 10%, rgba(146,119,252,1) 77%, rgba(192,119,252,1) 100%);
+    padding: 50px 20px;
+
+    &__logo {
+        @include setFlex(row, left);
+        gap: 20px;
+
+        &__title {
+            color: #ffffffcc;
+        }
+
+        svg {
+            max-width: 40px;
+        }
+
+    }
+
+    &__list {
+        padding-top: 50px;
+        padding-left: 10px;
+
+        &__element {
+            @include setFlex(row, left);
+            color: #ffffffcc;
+            font-weight: 700;
+            border-radius: 20px;
+            background-color: transparent;
+            transition: .3s;
+            margin: 10px;
+            gap: 10px;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                background-color: $darkViolet;
+            }
+
+            svg {
+                width: 20px;
+            }
+        }
+    }
+
+    &__bottom {
+                
+        hr {
+            width: 90%;
+            opacity: .2;
+        }
+    }
+}

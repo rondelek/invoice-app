@@ -1,0 +1,54 @@
+.home {
+    width: 100%;
+    margin: 50px 200px;
+
+    &__header {
+        display: flex;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: auto;
+            gap: 30px;
+
+            .filter {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                &__arrow {
+                    display: flex;
+                    transform: rotate(180deg);
+                }
+            }
+
+            .new-invoice {
+                display: flex;
+                align-items: center;
+                border-radius: 1000px;
+                color: white;
+                background-color: $lightViolet;
+                transition: .3s;
+                padding: 5px 12px 5px 8px;
+                gap: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: .8;
+                }
+
+                &__plus {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
