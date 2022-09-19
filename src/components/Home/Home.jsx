@@ -1,6 +1,7 @@
 import React from "react";
 import arrow from '../../assets/arrow-up.png'
 import plus from '../../assets/plus.png'
+import Invoices from "../Invoices/Invoices";
 
 function Home() {
     return (
@@ -24,6 +25,9 @@ function Home() {
                         <h3>New invoice</h3>
                     </button>
                 </div>
+            </div>
+            <div className="home__invoices">
+                <Invoices/>
             </div>
         </div>
     )
